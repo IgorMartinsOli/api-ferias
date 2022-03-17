@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:12
+    container_name: logistica-psql
+    restart: always
+    ports:
+      - 5430:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=logistica
